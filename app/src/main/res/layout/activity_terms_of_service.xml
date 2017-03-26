@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_terms_of_service"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context="com.chinasofti.guguanjia.ui.TermsOfServiceActivity">
+
+    <com.chinasofti.guguanjia.views.TitleView
+        android:id="@+id/termsOfService_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/termsOfService_head"
+        android:text="没有任何条款"
+        android:layout_centerInParent="true"
+        android:textSize="30dp">
+
+    </TextView>
+
+</RelativeLayout>

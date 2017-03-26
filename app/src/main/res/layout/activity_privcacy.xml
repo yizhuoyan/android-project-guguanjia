@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_privcacy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context="com.chinasofti.guguanjia.ui.PrivcacyActivity">
+
+    <com.chinasofti.guguanjia.views.TitleView
+        android:id="@+id/privacyAC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/privacyAC"
+        android:layout_centerInParent="true"
+        android:text="
+    仅限学习使用\n
+不得用于商业用途\n
+如果用于商业用途\n
+  本公司概不负责\n"
+        android:textSize="30dp">
+
+    </TextView>
+</RelativeLayout>

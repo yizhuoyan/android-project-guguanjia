@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_find_pass"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F3F3F3"
+    tools:context=".ui.FindPassActivity"
+   >
+    <com.chinasofti.guguanjia.views.TitleView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/find_head">
+    </com.chinasofti.guguanjia.views.TitleView>
+    <RelativeLayout
+        android:background="@drawable/relativebg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/find_head"
+
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="1dp"
+        android:id="@+id/relativeLayout">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="30dp"
+            android:text="手机号:"
+            android:textColor="#343434"
+            android:id="@+id/textView" />
+
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="23dp"
+            android:inputType="phone"
+            android:background="@drawable/edit_bg"
+            android:hint="  输入11位手机号"
+            android:textColorHint="#b0b0b0"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/textView"
+            android:layout_toEndOf="@+id/textView"
+            android:layout_marginStart="23dp"
+            android:id="@+id/phoneno" />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:background="@drawable/relativebg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="150dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="30dp"
+            android:text="新密码:"
+            android:textColor="#343434"
+            android:id="@+id/text3"
+            />
+        <EditText
+            android:layout_width="260dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="  输入8位以上数字或字母"
+            android:textColorHint="#b0b0b0"
+            android:id="@+id/newpwd"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+
+        android:background="@drawable/relativebg"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/relativeLayout"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="11dp"
+            android:layout_marginLeft="30dp"
+            android:text="验证码:"
+            android:textColor="#343434"
+            android:id="@+id/text5"
+            />
+        <EditText
+            android:layout_width="150dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="100dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edit_bg"
+            android:hint="  输入验证码"
+            android:textColorHint="#b0b0b0"
+            android:id="@+id/yzm"/>
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="30dp"
+           android:layout_marginLeft="265dp"
+            android:layout_marginTop="5dp"
+            android:text="获取验证码"
+            android:background="#00AE5F"
+            android:textColor="#FFFFFF"
+            android:id="@+id/hdyzm"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

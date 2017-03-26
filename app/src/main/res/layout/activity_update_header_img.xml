@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_update_header_img"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.chinasofti.guguanjia.ui.UpdateUserNameActivity">
+
+    <com.chinasofti.guguanjia.views.TitleView
+        android:id="@+id/updatHeaderImgTitleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </com.chinasofti.guguanjia.views.TitleView>
+
+    <LinearLayout
+        android:id="@+id/update_header_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@color/whiteColor"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/user_header_img"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+             />
+
+        <Button
+            android:id="@+id/update_header_img_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/user_header_img"
+            android:text="修改头像"
+            android:textColor="@color/greenColor"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>

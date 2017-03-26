@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_on_road_elec_cledger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chinasofti.guguanjia.ui.OnRoadElecCledgerActivity">
+    <com.chinasofti.guguanjia.views.TitleView
+        android:id="@+id/onRoadTopTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.chinasofti.guguanjia.views.TitleView>
+    <com.chinasofti.guguanjia.views.XListView
+        android:id="@+id/onRoadElecXlistview"
+        android:layout_below="@+id/onRoadTopTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></com.chinasofti.guguanjia.views.XListView>
+</RelativeLayout>

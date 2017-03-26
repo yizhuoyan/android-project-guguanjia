@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.chinasofti.guguanjia.ui.DetailActivity">
+
+    <com.chinasofti.guguanjia.views.TitleView
+        android:id="@+id/detailTitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <FrameLayout
+        android:id="@+id/wasteType_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/detailTitleView">
+
+        <RelativeLayout
+            android:id="@+id/wasteTypeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/wasteTypeText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="大       类"
+                android:textColor="@color/blank"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/wasteType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/wasteTypeText"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/blank"
+                android:paddingRight="40dp"
+                android:singleLine="true"
+                android:textSize="18sp" />
+
+            <ImageButton
+                android:id="@+id/wasteType_dropdown"
+                android:layout_width="36px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/weightLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/waste_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/weightText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="重量(吨)"
+            android:textColor="@color/blank"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:inputType="number"
+            android:layout_toRightOf="@+id/weightText" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/morphological_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weightLayout">
+
+        <RelativeLayout
+            android:id="@+id/morphologicalLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/morphologicalText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="形       态"
+                android:textColor="@color/blank"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/morphological"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/morphologicalText"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/blank" />
+
+            <ImageButton
+                android:id="@+id/morphological_dropdown"
+                android:layout_width="36px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/componentLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/morphological_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/componentText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="危害成份"
+            android:textColor="@color/blank"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/component"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/componentText" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/packaging_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/componentLayout">
+
+        <RelativeLayout
+            android:id="@+id/packagingLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/packagingText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="包装方式"
+                android:textColor="@color/blank"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/packaging"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/packagingText"
+                android:editable="false"
+                android:gravity="center_vertical"
+                android:textColor="@color/blank" />
+
+            <ImageButton
+                android:id="@+id/packaging_dropdown"
+                android:layout_width="36px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/plateNumberLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/packaging_layout"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/plateNumberText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="车牌号码"
+            android:textColor="@color/blank"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/plateNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/plateNumberText" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/waste_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/wasteType_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:id="@+id/wasteLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/wasteType_layout"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/wasteText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="小       类"
+                android:textColor="@color/blank"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/waste"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/wasteText"
+                android:editable="false"
+                android:paddingRight="40dp"
+                android:singleLine="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/blank" />
+
+            <ImageButton
+                android:id="@+id/waste_dropdown"
+                android:layout_width="36px"
+                android:layout_height="20px"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="15dp"
+                android:background="@mipmap/down_arrow" />
+        </RelativeLayout>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="morphological">
+        <item>固态</item>
+        <item>粉尘</item>
+        <item>液态</item>
+    </string-array>
+    <string-array name="packaging">
+        <item>袋装</item>
+        <item>桶装</item>
+        <item>散装</item>
+    </string-array>
+</resources>
