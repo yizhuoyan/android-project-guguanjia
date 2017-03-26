@@ -1,5 +1,4 @@
 *.iml
-*.class
 .gradle
 /local.properties
 /.idea/workspace.xml
@@ -8,3 +7,9 @@
 /build
 /captures
 .externalNativeBuild
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
